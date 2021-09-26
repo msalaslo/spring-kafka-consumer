@@ -1,0 +1,25 @@
+#Replicator properties
+consumer:
+   bootstrapAddress: ${CONSUMER_BOOTSTRAP_ADDRESS}
+#SASL_PLAINTEXT
+   security:
+      protocol: ${CONSUMER_SECURITY_PROTOCOL}
+# org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
+   sasl:
+      jaas:
+         config: ${CONSUMER_JAAS_CONFIG}
+# PLAIN
+      mechanism: ${CONSUMER_SASL_MECHANISM}
+# sbn.alarmlog-esp.bulk
+   topic:
+      names:
+         ${CONSUMER_TOPIC_NAMES}
+   group:
+      id: ${CONSUMER_GROUP_ID}
+# http://epi1moaireg01v:8081
+   schema:
+      registry: 
+         url: ${CONSUMER_SCHEMA_REGISTRY_URL}
+
+
+

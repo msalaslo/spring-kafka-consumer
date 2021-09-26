@@ -1,0 +1,23 @@
+#Replicator properties
+consumer:
+   bootstrapAddress: ef1kafkabrk01v:9092
+#SASL_PLAINTEXT
+   security:
+      protocol: SASL_PLAINTEXT
+# org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
+   sasl:
+      jaas:
+         config: "org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';"
+# PLAIN
+      mechanism: PLAIN
+# sbn.alarmlog-esp.bulk
+   topic:
+      names:
+         SBN_INSTALLATIONS_GBR_TABLE
+   group:
+      id: java.consumer.installation.test
+
+# http://epi1regmoaii01v:8081
+   schema: 
+      registry:
+         url: http://ef1kafkareg01v:8081
