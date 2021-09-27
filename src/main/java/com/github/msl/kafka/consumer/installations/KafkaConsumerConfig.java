@@ -61,6 +61,9 @@ public class KafkaConsumerConfig {
 		props.put("sasl.mechanism", consumerSaslMechanism);
 		props.put("sasl.jaas.config", consumerSaslJaasConfig);
 		props.put("schema.registry.url", consumerSchemaRegistryUrl);
+		props.put("auto.offset.reset", "earliest");
+
+		
 		return props;
 	}
 

@@ -20,7 +20,7 @@ consumer:
       names:
          SBN_INSTALLATIONS_GBR_TABLE
    group:
-      id: java.consumer.installation.test.1
+      id: java.consumer.installation.test.2
 
 # http://epi1regmoaii01v:8081
    schema: 

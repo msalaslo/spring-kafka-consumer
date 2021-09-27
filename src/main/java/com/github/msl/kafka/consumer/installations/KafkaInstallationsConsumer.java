@@ -19,7 +19,7 @@ public class KafkaInstallationsConsumer {
 	KafkaConsumerConfig consumerConfig;
 
 //	@KafkaListener(topics = {"${consumer.topic.names}"}, containerFactory = "kafkaListenerContainerFactory")
-	@KafkaListener(topics = { "SBN_INSTALLATIONS_GBR" }, containerFactory = "kafkaListenerContainerFactory")
+	@KafkaListener(topics = { "SBN_INSTALLATIONS_PRT_TABLE" }, containerFactory = "kafkaListenerContainerFactory")
 	public void avroConsumer(List<ConsumerRecord<Integer, InstallationDTO>> records) {
 		log.info("Received {} records.", records.size());
 		for (ConsumerRecord<Integer, InstallationDTO> record : records) {
