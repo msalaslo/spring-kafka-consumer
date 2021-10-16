@@ -1,31 +1,53 @@
 spring:
    kafka:
       consumer:
-         auto-offset-reset: earliest
-
-#Replicator properties
-consumer:
-   bootstrapAddress: ef1kafkabrk01v:9092
-#SASL_PLAINTEXT
-   security:
-      protocol: SASL_PLAINTEXT
-# org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
-   sasl:
-      jaas:
-         config: "org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';"
-# PLAIN
-      mechanism: PLAIN
-# sbn.alarmlog-esp.bulk
+         auto-offset-reset: latest
+         group-id: java.consumer.installation.test.2
+      bootstrap-servers: localhost:9092
+      #bootstrap-servers: ef1kafkabrk01v:9092
+      security:
+         #protocol: SASL_PLAINTEXT
+         protocol: PLAINTEXT
+      properties:
+         schema: 
+            registry:
+               #url: http://ef1kafkareg01v:8081
+               #url: http://epi1regmoaii01v:8081
+               url: http://localhost:8081
+         #sasl:
+            #mechanism: PLAIN
+            #jaas:
+               #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
+               #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';
+      template: 
+         default-topic: default-topic
+kafka:
    topic:
       names:
          SBN_INSTALLATIONS_GBR_TABLE
-   group:
-      id: java.consumer.installation.test.2
+         # sbn.alarmlog-esp.bulk
 
-# http://epi1regmoaii01v:8081
-   schema: 
-      registry:
-         url: http://ef1kafkareg01v:8081
+management:
+   server:
+     port: 8080
+   endpoints:
+      web:
+         exposure:
+            include: '*'
+         base-path: /actuator
+   metrics:
+      export:
+         elastic:
+            # You will probably want disable Elastic publishing in a local development profile.
+            enabled: true
+            # The interval at which metrics are sent to Elastic. The default is 1 minute.
+            step: 10s
+            host: http://localhost:9200
+            userName: elastic
+            password: changeme 
+            # The index to store metrics in, defaults to "micrometer-metrics"
+            index: micrometer-metrics
+            auto-create-index: false
 
 
 
