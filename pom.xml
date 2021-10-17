@@ -22,8 +22,7 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<project.artifact.name>${project.artifactId}</project.artifact.name>
 		<avro.version>1.10.2</avro.version>
-		<avro.serializer>6.2.1</avro.serializer>
-		<confluent.avro.serializer>5.3.0</confluent.avro.serializer>
+		<confluent.avro.serializer>6.2.1</confluent.avro.serializer>
 	</properties>
 	<repositories>
 		<repository>
@@ -35,6 +34,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,7 +74,7 @@
 		<dependency>
 			<groupId>io.confluent</groupId>
 			<artifactId>kafka-avro-serializer</artifactId>
-			<version>${avro.serializer}</version>
+			<version>${confluent.avro.serializer}</version>
 		</dependency>
 
 
@@ -84,6 +87,11 @@
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
 		</dependency>
 	</dependencies>
 
@@ -104,7 +112,7 @@
 							<goal>schema</goal>
 						</goals>
 						<configuration>
-							<sourceDirectory>src/main/resources/avro/com/verisure/vcp/sbn/avro</sourceDirectory>
+							<sourceDirectory>src/main/resources/avro/</sourceDirectory>
 							<outputDirectory>${project.build.directory}/generated-sources/annotations</outputDirectory>
 							<stringType>String</stringType>
 						</configuration>

@@ -3,6 +3,8 @@ spring:
       consumer:
          auto-offset-reset: latest
          group-id: java.consumer.installation.test.2
+         keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+         valueDeserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
       bootstrap-servers: localhost:9092
       #bootstrap-servers: ef1kafkabrk01v:9092
       security:
@@ -22,9 +24,7 @@ spring:
       template: 
          default-topic: default-topic
 kafka:
-   topic:
-      names:
-         SBN_INSTALLATIONS_GBR_TABLE
+   topicImages: SBN_INSTALLATIONS_GBR_TABLE
          # sbn.alarmlog-esp.bulk
 
 management:
@@ -36,6 +36,9 @@ management:
             include: '*'
          base-path: /actuator
    metrics:
+      tags:
+         host: milocal
+         application: spring-kafka-consumer
       export:
          elastic:
             # You will probably want disable Elastic publishing in a local development profile.
@@ -46,10 +49,19 @@ management:
             userName: elastic
             password: changeme 
             # The index to store metrics in, defaults to "micrometer-metrics"
-            index: micrometer-metrics
-            auto-create-index: false
+            index: metrics
+            auto-create-index: true
 
 
+      distribution:
+         percentiles-histogram:
+            http:
+               server:
+                  requests: true
+         sla:
+          http: 
+             server:
+                requests: 100ms, 400ms, 500ms, 2000ms
 
 
 
