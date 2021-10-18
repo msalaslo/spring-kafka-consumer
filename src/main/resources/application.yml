@@ -1,30 +1,30 @@
 spring:
    kafka:
       consumer:
-         auto-offset-reset: latest
-         group-id: java.consumer.installation.test.2
-         keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
-         valueDeserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
-      bootstrap-servers: localhost:9092
-      #bootstrap-servers: ef1kafkabrk01v:9092
-      security:
-         #protocol: SASL_PLAINTEXT
-         protocol: PLAINTEXT
+         auto-offset-reset: earliest
+         group-id: java.consumer.installation.test.3
+         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+         value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+         security:
+            protocol: SASL_PLAINTEXT
+         #protocol: PLAINTEXT
+      #bootstrap-servers: localhost:9092
+      bootstrap-servers: ef1kafkabrk01v:9092
       properties:
          schema: 
             registry:
-               #url: http://ef1kafkareg01v:8081
+               url: http://ef1kafkareg01v:8081
                #url: http://epi1regmoaii01v:8081
-               url: http://localhost:8081
-         #sasl:
-            #mechanism: PLAIN
-            #jaas:
+               #url: http://localhost:8081
+         sasl:
+            mechanism: PLAIN
+            jaas:
                #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
-               #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';
+               config: org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';
       template: 
          default-topic: default-topic
 kafka:
-   topicImages: SBN_INSTALLATIONS_GBR_TABLE
+   topicImages: sbn.installations-esp.bulk
          # sbn.alarmlog-esp.bulk
 
 management:
@@ -49,8 +49,8 @@ management:
             userName: elastic
             password: changeme 
             # The index to store metrics in, defaults to "micrometer-metrics"
-            index: metrics
-            auto-create-index: true
+            index: kafka-micrometer-metrics
+            auto-create-index: false
 
 
       distribution:

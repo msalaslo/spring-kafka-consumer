@@ -15,12 +15,12 @@ import lombok.extern.slf4j.Slf4j;
 public class KafkaInstallationsConsumer {
 
 
-	@KafkaListener(topics = { "SBN_INSTALLATIONS_GBR_TABLE" }, containerFactory = "customkafkaListenerContainerFactory")
+	@KafkaListener(topics = { "sbn.installations-esp.bulk" }, containerFactory = "customkafkaListenerContainerFactory")
 	public void avroConsumer(List<ConsumerRecord<String, InstallationDTO>> records) {
 		log.info("Received {} records.", records.size());
 		for (ConsumerRecord<String, InstallationDTO> record : records) {
 			InstallationDTO installation = record.value();
-			log.info("Received record with key:" + record.key() + ",  installation ADDR: " + installation.getADDR());
+			log.info("Received record with key:" + record.key() + ",  Sins: " + installation.getSIns()+ ",  InsNo: " + installation.getInsNo());
 		}
 	}
 

@@ -61,6 +61,8 @@ public class KafkaConsumerConfig {
 		if(kafkaProperties.getConsumer().getSecurity().getProtocol() != null) {
 			props.put("security.protocol", kafkaProperties.getConsumer().getSecurity().getProtocol());
 		}
+		
+		
 		//props.put("sasl.mechanism", consumerSaslMechanism);
 		//props.put("sasl.jaas.config", consumerSaslJaasConfig);
 		Map<String, String> extraProperties = kafkaProperties.getProperties();
