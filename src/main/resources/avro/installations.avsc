@@ -1,939 +1,1628 @@
 {
-  "connect.name": "com.verisure.vcp.sbn.avro.InstallationDTO",
-  "connect.version": 1,
   "fields": [
     {
-      "name": "sIns",
-      "type": "int"
+      "default": null,
+      "name": "SADDR",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SADDRM",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SADDRM2",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SCONT",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SCONTL",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SBRINST",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "RSBR",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "MSBR",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SSBR",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "SSREG",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "RO",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "INS_NO",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "DEAL_ID",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sAddr",
-      "type": "int"
+      "default": null,
+      "name": "SUB_DEAL",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sAddrm",
-      "type": "int"
+      "default": null,
+      "name": "MISCNO1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sAddrm2",
-      "type": "int"
+      "default": null,
+      "name": "MISCNO2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sCont",
-      "type": "int"
+      "default": null,
+      "name": "SUB_TP",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sContl",
-      "type": "int"
+      "default": null,
+      "name": "SUB_EXPTP",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sBrInst",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "REP_FLG",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "rsBr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "SKILL",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "msBr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "TMZONPR",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ssBr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "SUBZONE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ssReg",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "REFSINS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "ro",
-      "type": "string"
+      "default": null,
+      "name": "PASSVER",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ins_no",
-      "type": "string"
+      "default": null,
+      "name": "SINST",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "deal_id",
-      "type": "string"
+      "default": null,
+      "name": "INS_DT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "sub_deal",
-      "type": "string"
+      "default": null,
+      "name": "MONSTATINST",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscno1",
-      "type": "string"
+      "default": null,
+      "name": "MONSTATDTINST",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "miscno2",
-      "type": "string"
+      "default": null,
+      "name": "CHG_TM",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "sub_tp",
-      "type": "string"
+      "default": null,
+      "name": "SUS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "sub_exptp",
-      "type": "string"
+      "default": null,
+      "name": "CHG_IX",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "rep_flg",
-      "type": "string"
+      "default": null,
+      "name": "TXTZONREF",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "skill",
-      "type": "string"
+      "default": null,
+      "name": "INSU_ID",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "tmzonpr",
-      "type": "string"
+      "default": null,
+      "name": "MGRP1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "subzone",
-      "type": "string"
+      "default": null,
+      "name": "MGRP2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "refsIns",
-      "type": "int"
+      "default": null,
+      "name": "COMMENT1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "passver",
-      "type": "string"
+      "default": null,
+      "name": "COMMENT2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sInst",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISCDT1",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "ins_dt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISCDT2",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "monStatInst",
-      "type": "string"
+      "default": null,
+      "name": "MISCDT3",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "monStatDtInst",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISCDT4",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "chg_tm",
-      "type": "int"
+      "default": null,
+      "name": "MISCDT5",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "sUs",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISCDT6",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "chg_ix",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "txtzonref",
-      "type": "string"
+      "default": null,
+      "name": "MISC2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "insu_id",
-      "type": "string"
+      "default": null,
+      "name": "MISC3",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "mgrp1",
-      "type": "string"
+      "default": null,
+      "name": "MISC4",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "mgrp2",
-      "type": "string"
+      "default": null,
+      "name": "MISC5",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "comment1",
-      "type": "string"
+      "default": null,
+      "name": "MISC6",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "comment2",
-      "type": "string"
+      "default": null,
+      "name": "MISC7",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt1",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC8",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt2",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC9",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt3",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC10",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt4",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "DURESS",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt5",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "PROT_AREA",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "miscdt6",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "TELCO_LOC",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc1",
-      "type": "string"
+      "default": null,
+      "name": "PANEL_LOC",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc2",
-      "type": "string"
+      "default": null,
+      "name": "PHO_AREA",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc3",
-      "type": "string"
+      "default": null,
+      "name": "PSBR",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc4",
-      "type": "string"
+      "default": null,
+      "name": "PSREG",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc5",
-      "type": "string"
+      "default": null,
+      "name": "SCREFSINS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc6",
-      "type": "string"
+      "default": null,
+      "name": "STERR",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc7",
-      "type": "string"
+      "default": null,
+      "name": "ASBR",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc8",
-      "type": "string"
+      "default": null,
+      "name": "GRP_1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc9",
-      "type": "string"
+      "default": null,
+      "name": "GRP_2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc10",
-      "type": "string"
+      "default": null,
+      "name": "TEMPLATE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "duress",
-      "type": "string"
+      "default": null,
+      "name": "CANCEL_DT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "prot_area",
-      "type": "string"
+      "default": null,
+      "name": "APREFSINS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "telco_loc",
-      "type": "string"
+      "default": null,
+      "name": "APFIRST",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "panel_loc",
-      "type": "string"
+      "default": null,
+      "name": "DEFIRST",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pho_area",
-      "type": "string"
+      "default": null,
+      "name": "PCPRINT",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "psBr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "CRED_SCORE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "psReg",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "CRED_RES",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "screfsIns",
-      "type": "int"
+      "default": null,
+      "name": "CRED_REF",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sTerr",
-      "type": "int"
+      "default": null,
+      "name": "CRED_DT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "asBr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "NMONSTATINST",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "grp_1",
-      "type": "string"
+      "default": null,
+      "name": "NMONSTATTMINST",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "grp_2",
-      "type": "string"
+      "default": null,
+      "name": "SBS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "template",
-      "type": "string"
+      "default": null,
+      "name": "MISC20",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "cancel_dt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC21",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "aprefsIns",
-      "type": "int"
+      "default": null,
+      "name": "MISC22",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "apfirst",
-      "type": "string"
+      "default": null,
+      "name": "MISC23",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "defirst",
-      "type": "string"
+      "default": null,
+      "name": "DCC1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pcprint",
-      "type": "string"
+      "default": null,
+      "name": "DCC2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "cred_score",
-      "type": "string"
+      "default": null,
+      "name": "BACKUPVER",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "cred_res",
-      "type": "string"
+      "default": null,
+      "name": "OCEXP",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "cred_ref",
-      "type": "string"
+      "default": null,
+      "name": "OCNAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "cred_dt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "PRTREQ",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "nMonStatInst",
-      "type": "string"
+      "default": null,
+      "name": "PRTDT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "nMonStatTmInst",
-      "type": "int"
+      "default": null,
+      "name": "MAINTYPE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sBs",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MAINFREQ",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc20",
-      "type": "string"
+      "default": null,
+      "name": "MAINEXPDT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc21",
-      "type": "string"
+      "default": null,
+      "name": "MAINDT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc22",
-      "type": "string"
+      "default": null,
+      "name": "SINST_1",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc23",
-      "type": "string"
+      "default": null,
+      "name": "SINST_2",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "dcc1",
-      "type": "string"
+      "default": null,
+      "name": "SSALE_1",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "dcc2",
-      "type": "string"
+      "default": null,
+      "name": "SSALE_2",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "backupver",
-      "type": "string"
+      "default": null,
+      "name": "BRINST",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "ocexp",
-      "type": "string"
+      "default": null,
+      "name": "SBR_SALE",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "ocname",
-      "type": "string"
+      "default": null,
+      "name": "SBR_SERV",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "prtreq",
-      "type": "string"
+      "default": null,
+      "name": "MISC24",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "prtdt",
-      "type": "int"
+      "default": null,
+      "name": "MISC25",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "maintype",
-      "type": "string"
+      "default": null,
+      "name": "MISC26",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "mainfreq",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC27",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "mainexpdt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC28",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "maindt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC29",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sInst_1",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC30",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sInst_2",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC31",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sSale_1",
-      "type": "int"
+      "default": null,
+      "name": "MISC32",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sSale_2",
-      "type": "int"
+      "default": null,
+      "name": "MISC33",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "brInst",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC34",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sBr_sale",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC35",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "sBr_serv",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "MISC36",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc24",
-      "type": "string"
+      "default": null,
+      "name": "MISC37",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc25",
-      "type": "string"
+      "default": null,
+      "name": "MISC38",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc26",
-      "type": "string"
+      "default": null,
+      "name": "MISC39",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc27",
-      "type": "string"
+      "default": null,
+      "name": "MISC40",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc28",
-      "type": "string"
+      "default": null,
+      "name": "MISC41",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc29",
-      "type": "string"
+      "default": null,
+      "name": "MISC42",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc30",
-      "type": "string"
+      "default": null,
+      "name": "MISC43",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc31",
-      "type": "string"
+      "default": null,
+      "name": "MISC44",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc32",
-      "type": "string"
+      "default": null,
+      "name": "MISC45",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc33",
-      "type": "string"
+      "default": null,
+      "name": "MISC46",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc34",
-      "type": "string"
+      "default": null,
+      "name": "MISC47",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc35",
-      "type": "string"
+      "default": null,
+      "name": "MISC48",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc36",
-      "type": "string"
+      "default": null,
+      "name": "MISC49",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc37",
-      "type": "string"
+      "default": null,
+      "name": "MISC50",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc38",
-      "type": "string"
+      "default": null,
+      "name": "FISC_DT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc39",
-      "type": "string"
+      "default": null,
+      "name": "EXTSTAT",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc40",
-      "type": "string"
+      "default": null,
+      "name": "EXTSTATTM",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc41",
-      "type": "string"
+      "default": null,
+      "name": "IX",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc42",
-      "type": "string"
+      "default": null,
+      "name": "ALID",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc43",
-      "type": "string"
+      "default": null,
+      "name": "PANEL",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc44",
-      "type": "string"
+      "default": null,
+      "name": "TEST_INT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "misc45",
-      "type": "string"
+      "default": null,
+      "name": "ID",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc46",
-      "type": "string"
+      "default": null,
+      "name": "ADDR",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc47",
-      "type": "string"
+      "default": null,
+      "name": "USRNAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc48",
-      "type": "string"
+      "default": null,
+      "name": "PASSWRD",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc49",
-      "type": "string"
+      "default": null,
+      "name": "PARAM",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "misc50",
-      "type": "string"
+      "default": null,
+      "name": "CTYPE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "fisc_dt",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "EXT_TEST_INT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "extstat",
-      "type": "string"
+      "default": null,
+      "name": "PPHONE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "extstattm",
-      "type": "int"
+      "default": null,
+      "name": "CALLID_SUP",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ix",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "PRIM",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "alid",
-      "type": "string"
+      "default": null,
+      "name": "REV",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "panel",
-      "type": "string"
+      "default": null,
+      "name": "PPHONE2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "test_int",
-      "type": "int"
+      "default": null,
+      "name": "PPHONE3",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "id",
-      "type": "string"
+      "default": null,
+      "name": "PPHONE4",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "addr",
-      "type": "string"
+      "default": null,
+      "name": "MONSTATAIDS",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "usrname",
-      "type": "string"
+      "default": null,
+      "name": "MONSTATDTAIDS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "passwrd",
-      "type": "string"
+      "default": null,
+      "name": "LINE_TYPE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "param",
-      "type": "string"
+      "default": null,
+      "name": "LINE_COMM",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ctype",
-      "type": "string"
+      "default": null,
+      "name": "PAN_LOC",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ext_test_int",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "PAN_COMM",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pphone",
-      "type": "string"
+      "default": null,
+      "name": "TSINS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "callid_sup",
-      "type": "string"
+      "default": null,
+      "name": "ATYPE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "prim",
-      "type": "string"
+      "default": null,
+      "name": "NMONSTATAIDS",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "rev",
-      "type": "string"
+      "default": null,
+      "name": "NMONSTATTMAIDS",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "pphone2",
-      "type": "string"
+      "default": null,
+      "name": "NTEST_INT",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "pphone3",
-      "type": "string"
+      "default": null,
+      "name": "SEGRADE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pphone4",
-      "type": "string"
+      "default": null,
+      "name": "NOTIF",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "monStatAids",
-      "type": "string"
+      "default": null,
+      "name": "LINE_TYPE2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "monStatDtAids",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "LINE_COMM2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_type",
-      "type": "string"
+      "default": null,
+      "name": "LINE_TYPE3",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_comm",
-      "type": "string"
+      "default": null,
+      "name": "LINE_COMM3",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pan_loc",
-      "type": "string"
+      "default": null,
+      "name": "NAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "pan_comm",
-      "type": "string"
+      "default": null,
+      "name": "FNAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "tsIns",
-      "type": "int"
+      "default": null,
+      "name": "INAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "atype",
-      "type": "string"
+      "default": null,
+      "name": "TNAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "nMonStatAids",
-      "type": "string"
+      "default": null,
+      "name": "ALIAS_NAME",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "nMonStatTmAids",
-      "type": "int"
+      "default": null,
+      "name": "STREET1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "ntest_int",
-      "type": "int"
+      "default": null,
+      "name": "STREET1NO1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "segrade",
-      "type": "string"
+      "default": null,
+      "name": "STREET1NO2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "notif",
-      "type": "string"
+      "default": null,
+      "name": "STREET2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_type2",
-      "type": "string"
+      "default": null,
+      "name": "CITY",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_comm2",
-      "type": "string"
+      "default": null,
+      "name": "CITY2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_type3",
-      "type": "string"
+      "default": null,
+      "name": "ZIP",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "line_comm3",
-      "type": "string"
+      "default": null,
+      "name": "STATE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "name",
-      "type": "string"
+      "default": null,
+      "name": "PHONE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "fname",
-      "type": "string"
+      "default": null,
+      "name": "PHONE2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "iname",
-      "type": "string"
+      "default": null,
+      "name": "FAX",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "tname",
-      "type": "string"
+      "default": null,
+      "name": "CROSS_STREET",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "alias_name",
-      "type": "string"
+      "default": null,
+      "name": "MAP_GRID",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "street1",
-      "type": "string"
+      "default": null,
+      "name": "SBRADDR",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "street1no1",
-      "type": "string"
+      "default": null,
+      "name": "ADDR_TP",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "street1no2",
-      "type": "string"
+      "default": null,
+      "name": "GEOCODE",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "street2",
-      "type": "string"
+      "default": null,
+      "name": "SLANG",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "city",
-      "type": "string"
+      "default": null,
+      "name": "SCURR",
+      "type": [
+        "null",
+        "int"
+      ]
     },
     {
-      "name": "city2",
-      "type": "string"
+      "default": null,
+      "name": "E_MAIL1",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "zip",
-      "type": "string"
+      "default": null,
+      "name": "E_MAIL2",
+      "type": [
+        "null",
+        "string"
+      ]
     },
     {
-      "name": "state",
-      "type": "string"
-    },
-    {
-      "name": "phone",
-      "type": "string"
-    },
-    {
-      "name": "phone2",
-      "type": "string"
-    },
-    {
-      "name": "fax",
-      "type": "string"
-    },
-    {
-      "name": "cross_street",
-      "type": "string"
-    },
-    {
-      "name": "map_grid",
-      "type": "string"
-    },
-    {
-      "name": "sBrAddr",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
-    },
-    {
-      "name": "addr_tp",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
-    },
-    {
-      "name": "geocode",
-      "type": "string"
-    },
-    {
-      "name": "sLang",
-      "type": "int"
-    },
-    {
-      "name": "sCurr",
-      "type": "int"
-    },
-    {
-      "name": "e_mail1",
-      "type": "string"
-    },
-    {
-      "name": "e_mail2",
-      "type": "string"
-    },
-    {
-      "name": "phtxt1",
-      "type": "string"
-    },
-    {
-      "name": "phtxt2",
-      "type": "string"
-    },
-    {
-      "name": "phone3",
-      "type": "string"
-    },
-    {
-      "name": "a_lat",
-      "type": "string"
-    },
-    {
-      "name": "a_lon",
-      "type": "string"
-    },
-    {
-      "name": "gc_quality",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
-    },
-    {
-      "name": "e_mail3",
-      "type": "string"
-    },
-    {
-      "name": "e_mail4",
-      "type": "string"
-    },
-    {
-      "name": "country",
-      "type": "string"
-    },
-    {
-      "name": "bldg",
-      "type": "string"
-    },
-    {
-      "name": "phtxt3",
-      "type": "string"
-    },
-    {
-      "name": "gmtofs",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
-    },
-    {
-      "name": "dstofs",
-      "type": {
-        "connect.type": "int16",
-        "type": "int"
-      }
+      "default": null,
+      "name": "PHTXT1",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "PHTXT2",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "PHONE3",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "A_LAT",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "A_LON",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "GC_QUALITY",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "E_MAIL3",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "E_MAIL4",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "COUNTRY",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "BLDG",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "PHTXT3",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "GMTOFS",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "DSTOFS",
+      "type": [
+        "null",
+        "int"
+      ]
     }
   ],
   "name": "InstallationDTO",

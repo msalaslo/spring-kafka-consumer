@@ -2,29 +2,38 @@ spring:
    kafka:
       consumer:
          auto-offset-reset: earliest
-         group-id: java.consumer.installation.test.3
+         group-id: java.consumer.installations.test
          key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
          value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
          security:
-            protocol: SASL_PLAINTEXT
-         #protocol: PLAINTEXT
+            #protocol: PLAINTEXT
+            #protocol: SASL_PLAINTEXT
+            protocol: SASL_SSL
       #bootstrap-servers: localhost:9092
-      bootstrap-servers: ef1kafkabrk01v:9092
+      #bootstrap-servers: ef1kafkabrk01v:9092
+      #bootstrap-servers: epi1moaibrk01v:9092
+      bootstrap-servers: ef1brkmoaii01v.epi.securitasdirect.local:9093
       properties:
+         specific:
+            avro:
+               reader: true
          schema: 
             registry:
-               url: http://ef1kafkareg01v:8081
-               #url: http://epi1regmoaii01v:8081
                #url: http://localhost:8081
+               #url: http://ef1kafkareg01v:8081
+               url: https://ef1regmoaii01v.epi.securitasdirect.local:8081
          sasl:
-            mechanism: PLAIN
+            #mechanism: PLAIN
+            mechanism: SCRAM-SHA-512
             jaas:
                #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='${CONSUMER_USER}'   password='${CONSUMER_PASSWORD}';
-               config: org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';
+               #config: org.apache.kafka.common.security.plain.PlainLoginModule required username='client' password='client-secret';
+               config: org.apache.kafka.common.security.scram.ScramLoginModule required username='client' password='441e669f0c';               
       template: 
          default-topic: default-topic
 kafka:
-   topicImages: sbn.installations-esp.bulk
+   installationsTopic: SBN_INSTALLATIONS_ESP_TABLE
+   installationsInvTopic: test.msl.metrics
          # sbn.alarmlog-esp.bulk
 
 management:
@@ -51,8 +60,6 @@ management:
             # The index to store metrics in, defaults to "micrometer-metrics"
             index: kafka-micrometer-metrics
             auto-create-index: false
-
-
       distribution:
          percentiles-histogram:
             http:
@@ -62,6 +69,7 @@ management:
           http: 
              server:
                 requests: 100ms, 400ms, 500ms, 2000ms
-
+         percentiles:
+            http.server.requests: 0.5, 0.9, 0.95, 0.99
 
 

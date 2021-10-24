@@ -1,0 +1,65 @@
+{
+  "fields": [
+    {
+      "name": "INS_NO",
+      "type": [
+        "string"
+      ]
+    },
+    {
+      "name": "DEAL_ID",
+      "type": [
+        "string"
+      ]
+    },
+    {
+      "name": "SINST",
+      "type": [
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "CHG_TM",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "default": null,
+      "name": "MISC27",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "MISC44",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "PANEL",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "default": null,
+      "name": "CROSS_STREET",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "InstallationInvDTO",
+  "namespace": "com.verisure.vcp.sbn.avro",
+  "type": "record"
+}
