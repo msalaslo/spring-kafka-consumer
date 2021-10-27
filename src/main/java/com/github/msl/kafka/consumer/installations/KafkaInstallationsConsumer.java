@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 public class KafkaInstallationsConsumer {
 
 
-//	@KafkaListener(id = "installations-consumer", topics = { "#{'${kafka.installationsTopic}'}" }, containerFactory = "customkafkaListenerContainerFactory")
+	@KafkaListener(id = "installations-consumer", topics = { "#{'${kafka.installationsTopic}'}" }, containerFactory = "customkafkaListenerContainerFactory")
 	public void installationsConsumer(List<ConsumerRecord<String, InstallationDTO>> records) {
 		log.info("Received {} records.", records.size());
 		for (ConsumerRecord<String, InstallationDTO> record : records) {
@@ -25,12 +25,13 @@ public class KafkaInstallationsConsumer {
 		}
 	}
 	
-//	@KafkaListener(id = "installations-inv-consumer", topics = { "#{'${kafka.installationsInvTopic}'}" }, containerFactory = "intallationsInvkafkaListenerContainerFactory")
-	@KafkaListener(id = "installations-inv-consumer", topics = { "#{'${kafka.installationsInvTopic}'}" })
-	public void installationsInvConsumer(ConsumerRecord<String, InstallationInvDTO> record) {
-
+	@KafkaListener(id = "installations-inv-consumer", topics = { "#{'${kafka.installationsInvTopic}'}" }, containerFactory = "intallationsInvkafkaListenerContainerFactory")
+	public void installationsInvConsumer(List<ConsumerRecord<String, InstallationInvDTO>> records) {
+		log.info("Received {} records.", records.size());
+		for (ConsumerRecord<String, InstallationInvDTO> record : records) {
 			InstallationInvDTO installation = record.value();
 			log.info("Received record with key:" + record.key() + ",  Sins: " + installation.getSINST()+ ",  InsNo: " + installation.getINSNO());
+		}
 	}
 
 }

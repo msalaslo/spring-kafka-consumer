@@ -46,8 +46,8 @@ public class KafkaConsumerConfig {
 	 * @return custom configured KafkaListenerContainerFactory
 	 */
 	@Bean
-	KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<Integer, InstallationDTO>> customkafkaListenerContainerFactory(ConsumerFactory<Integer, InstallationDTO> consumerFactory) {
-		ConcurrentKafkaListenerContainerFactory<Integer, InstallationDTO> factory = new ConcurrentKafkaListenerContainerFactory<>();
+	KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, InstallationDTO>> customkafkaListenerContainerFactory(ConsumerFactory<String, InstallationDTO> consumerFactory) {
+		ConcurrentKafkaListenerContainerFactory<String, InstallationDTO> factory = new ConcurrentKafkaListenerContainerFactory<>();
 		factory.setConsumerFactory(consumerFactory);
 		factory.setConcurrency(1);
 		factory.getContainerProperties().setPollTimeout(100);
@@ -63,8 +63,8 @@ public class KafkaConsumerConfig {
 	 * @return custom configured KafkaListenerContainerFactory
 	 */
 	@Bean
-	KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<Integer, InstallationInvDTO>> intallationsInvkafkaListenerContainerFactory(ConsumerFactory<Integer, InstallationInvDTO> consumerFactory) {
-		ConcurrentKafkaListenerContainerFactory<Integer, InstallationInvDTO> factory = new ConcurrentKafkaListenerContainerFactory<>();
+	KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, InstallationInvDTO>> intallationsInvkafkaListenerContainerFactory(ConsumerFactory<String, InstallationInvDTO> consumerFactory) {
+		ConcurrentKafkaListenerContainerFactory<String, InstallationInvDTO> factory = new ConcurrentKafkaListenerContainerFactory<>();
 		factory.setConsumerFactory(consumerFactory);
 		factory.setConcurrency(1);
 		factory.getContainerProperties().setPollTimeout(100);
